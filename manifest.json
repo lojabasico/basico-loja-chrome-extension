@@ -10,7 +10,8 @@
    "default_popup": "popup.html"
   },
   "permissions": [
-   "activeTab"
+   "activeTab",
+   "storage"
  ],
  "icons": {
    "16": "favicon-16x16.png",
