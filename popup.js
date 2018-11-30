@@ -6,9 +6,11 @@ chrome.storage.sync.get('store_name', function(data) {
 })
 
 function saveConfig () {
+  var nomeLoja = document.getElementById('nome_loja').value
   chrome.storage.sync.set({
-    'store_name': document.getElementById('nome_loja').value
+    'store_name': nomeLoja
   })
+  alert("Loja [" + nomeLoja + "] salva com sucesso!")
 }
 
 document.getElementById('save').addEventListener('click', saveConfig)
