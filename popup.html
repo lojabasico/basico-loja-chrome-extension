@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <title>basico.com - loja</title>
 
     <style>
@@ -9,15 +10,69 @@
         display: none;
         color: #000;
       }
+
+      .subtitle {
+        font-weight: bold;
+      }
+
+      .infobox {
+        background-color: #000;
+        color: #fff;
+        padding: 8px;
+      }
+
+      .form .nomeloja {
+        padding: 8px;
+        font-size: 14px;
+        outline: 0;
+        border: 0px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        background-color: #f2f2f2;
+        font-style:italic;
+        font-weight: bold;
+        color: #3944d2;
+      }
+
+      .form label {
+        margin-bottom: 5px;
+        display: block;
+      }
+
+      #save {
+        background-color: #f2f2f2;
+        color: #000;
+        border: 1px solid #b8b8b8;
+        padding:5px;
+        font-size: 14px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        /* border: 0px; */
+        text-transform: lowercase;
+        cursor: pointer;
+      }
+
+      #save:hover {
+        background-color: #808080;
+        border: 1px solid #808080;
+        color: #fff;
+      }
+
+      #save:focus {
+        outline: none;
+        box-shadow: 0;
+      }
     </style>
   </head>
   <body>
     <h1>basico.com</h1>
-    <p>Acesso exclusivo de loja!</p>
+    <p class="subtitle">Acesso exclusivo de loja!</p>
 
-    <div style="margin-bottom:20px;">
+    <p class="infobox">
+      Não sabe o que digitar no campo abaixo? Consulte nossa equipe!
+    </p>
+
+    <div style="margin-bottom:20px;" class="form">
       <label>Nome da loja:</label>
-      <input type="text" id="nome_loja"></input>
+      <input class="nomeloja" type="text" id="nome_loja"></input>
     </div>
 
     <button id="save">Salvar</button>
